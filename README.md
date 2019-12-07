@@ -14,8 +14,8 @@ This is my submission for the Bootcamp's final challenge: a full-stack applicati
 that lets administrators manage daily gym functions, and lets students post questions
 about workouts and healthy habits.
 
-I put a lot of hard work in this entire process, even lost a girlfriend. I hope 
-ya'll like my work and see the passion behind each line of code. It's been crazy 
+I put a lot of hard work in this entire process: it became the focus of all my free time. 
+I hope ya'll like my work and see the passion behind each line of code. It's been crazy 
 these last few months, and I'm stocked this is finally done.
 
 ## ⚙️ Technologies
