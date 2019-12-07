@@ -11,14 +11,41 @@
 ## 🚀 About the challenge
 
 This is my submission for the Bootcamp's final challenge: a full-stack application
-that lets administrators manage daily gym functions and lets students post questions
+that lets administrators manage daily gym functions, and lets students post questions
 about workouts and healthy habits.
 
-I put a lot of hard work in this entire process, even lost
-a girlfriend. I hope ya'll like my work and see the passion behind each line of code.
-It's been crazy these last few months. I'm stocked this is finally done.
+I put a lot of hard work in this entire process, even lost a girlfriend. I hope 
+ya'll like my work and see the passion behind each line of code. It's been crazy 
+these last few months, and I'm stocked this is finally done.
 
-### Cloning the repo
+## Technologies
+
+#### Back-end
+
+- NodeJS
+- Express
+- Sequelize
+- PostgresSQL
+- bcrypt
+- JWT
+- date-fns
+- Yup
+- HandleBars
+
+#### Front-ends
+
+- ReactJS & ReactNative
+- Axios
+- Redux & Saga
+- Immer
+- date-fns
+- Styled Components & Polished
+- Yup
+- Rocketseat Unform
+- PropTypes
+- MaterialUI Modals
+
+## Cloning the repo
 
 Since I used git submodules, a normal clone won't do the trick. Git submodules 
 allow us to easily link repos so that we:
@@ -33,9 +60,9 @@ Run git clone with the recursive flag to pull the entire thing:
 git clone --recursive https://github.com/Librity/gympoint_full_stack
 ```
 
-### 🤖 Running the back-end
+## 🤖 Running the back-end
 
-To boot, we need to create three Docker containers to handle the applications
+To boot, we need to create three Docker containers to handle the application's
 various jobs and databases. Assuming you have
 [Docker installed](https://docs.docker.com/install/), run these:
 
@@ -46,13 +73,22 @@ docker run --name redis -p 6379:6379 -d -t redis:alpine
 ```
 
 and wait for the machines to boot. We then navigate into to the project's
-directory, create a .env file
+directory, create a .env file,
 
 ```
 cd gympoint_back_end
 ```
 
-and fill it in with the relevant info.
+and fill out the relevant info. Take note of the machine's IP, which should remain the same
+for the other configurations of the front-end: the API service and reactotron. You can easily find your
+network IP by runnig `ifconfig` on Linux and `ipconfig` on Windows. I noticed that each 
+operating system has its particularities with these setups. For example, in Windows we have to 
+set-up the reactotron (`~/gympoint_front_end_XXX/src/config/ReactotronConfig.js`) on `localhost`, 
+even the mobile one. In Linux however, we use the machine's network IP. Unless you're running an android 
+emulator, I recomend using the network IP for all configurations if it let's you. You can get by using with using `localhost`, but it'll probably take some tinkering. I didn't test these at all with Mac and iOS.
+
+[Monitoring](https://sentry.io/) and [Mailing](https://mailtrap.io/) are completely set up; 
+just fill out the DSN and the mailing fields and you're golden.
 
 ```
 APP_URL=http://YOU.R00.000.0IP
@@ -105,24 +141,24 @@ after which we can finally run the backend:
 yarn dev
 ```
 
-With a mail service configured we can also run the jobs machine in another Screen
+With the mail service configured we can also run the jobs machine in a second Screen
 
 ```
 yarn queue
 ```
 
-Also, check out the the insomnia workspaces inside `gympoint_back_end/insomnia_workspaces`.
+Also, check out the the latest Insomnia Workspace inside `gympoint_back_end/insomnia_workspaces`.
 
-### 🖥️ Running the web front-end
+## 🖥️ Running the web front-end
 
-We then open a third screen, navigate into the project's directory and run yarn:
+We then open a third Screen, navigate into the project's directory and run yarn:
 
 ```
 cd gympoint_front_end_web
 yarn
 ```
 
-and edit the api's url to match the back-end's
+Edit the API's url to match the back-end's
 
 ```
 nano ./src/services/api.js
@@ -146,16 +182,16 @@ yarn start
 
 The deault admin user is `admin@gympoint.com`, password `123456`.
 
-### 📱 Running the Android front-end
+## 📱 Running the Android front-end
 
-We then open a fourth screen, navigate into the project's directory and run yarn again:
+We then open a fourth Screen, navigate into the project's directory and run yarn again:
 
 ```
 cd gympoint_front_end_mobile
 yarn
 ```
 
-Also edit the api's url like in the step above:
+Also edit the API's url like in the step above:
 
 ```
 nano ./src/services/api.js
@@ -175,7 +211,7 @@ adb reverse tcp:9090 tcp:9090
 react-native start
 ```
 
-- And in a fifth screen:
+- And in a fifth Screen:
 
 ```
 react-native run-android
@@ -183,17 +219,15 @@ react-native run-android
 
 This takes a while, so grab yoursel a cold one. Now I'm not gonna get into whether
 or not you should emulate this thing, but I recomend running it in a physical Android
-device. I do not own or ever plan on owning a mac, and I plan to develop exclusively
-for Android and hire some bloke with more money to squeeze it into Apple's crocodilian
-mouth.
+device.
 
 Hopefully by now you'll have the entire project working on both fronts and
-consuming the API.
+consuming the API like a champ.
 
 ## 💖 Acknowledgements
 
 I would like to thank everyone who's helped me in getting this certificate:
-My parents, my brother, my colleagues [Thiago Durante](https://github.com/thdurante),
+My parents, my brother and my colleagues: [Thiago Durante](https://github.com/thdurante),
 [Lucas Amaral](https://github.com/linkbolto) and [Nicolas Marçal](https://github.com/nicolasmarcal).
 
 I would also like to thank the instructors and everyone in the discord community
