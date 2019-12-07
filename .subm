@@ -1,0 +1,7 @@
+
+git rm --cached gympoint_back_end
+git submodule add https://github.com/Librity/gympoint_back_end gympoint_back_end
+git rm --cached gympoint_front_end_web
+git submodule add https://github.com/Librity/gympoint_front_end_web gympoint_front_end_web
+git rm --cached gympoint_front_end_mobile
+git submodule add https://github.com/Librity/gympoint_front_end_mobile gympoint_front_end_mobile
