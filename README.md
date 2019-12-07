@@ -178,7 +178,7 @@ consuming the API.
 ## 💖 Acknowledgements
 
 I would like to thank everyone who's helped me in getting this certificate:
-My parents, my brother, my colleges [Thiago Durante](https://github.com/thdurante),
+My parents, my brother, my colleagues [Thiago Durante](https://github.com/thdurante),
 [Lucas Amaral](https://github.com/linkbolto) and [Nicolas Marçal](https://github.com/nicolasmarcal).
 
 I would also like to thank the instructors and everyone in the discord community
@@ -190,4 +190,4 @@ This software comes with the hyper-permissive [MIT LICENSE](LICENSE.md).
 
 ---
 
-Made with ♥ by [Luis Geniole 🕎](https://github.com/Librity) :wave:
+Made with ♥ by [🕎 Luis Geniole](https://github.com/Librity) :wave:
