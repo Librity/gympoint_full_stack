@@ -18,7 +18,7 @@ I put a lot of hard work in this entire process, even lost a girlfriend. I hope
 ya'll like my work and see the passion behind each line of code. It's been crazy 
 these last few months, and I'm stocked this is finally done.
 
-## Technologies
+## ⚙️ Technologies
 
 #### Back-end
 
@@ -45,7 +45,7 @@ these last few months, and I'm stocked this is finally done.
 - PropTypes
 - MaterialUI Modals
 
-## Cloning the repo
+## 👥 Cloning the repo
 
 Since I used git submodules, a normal clone won't do the trick. Git submodules 
 allow us to easily link repos so that we:
