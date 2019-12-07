@@ -18,6 +18,21 @@ I put a lot of hard work in this entire process, even lost
 a girlfriend. I hope ya'll like my work and see the passion behind each line of code.
 It's been crazy these last few months. I'm stocked this is finally done.
 
+### Cloning the repo
+
+Since I used git submodules, a normal clone won't do the trick. Git submodules 
+allow us to easily link repos so that we:
+- Save on storage by avoiding repo crowding;
+- Have version control from within the repo, and only pull the submodule version
+that's compatible with the project;
+- Easily pulll the latest version of the submodules with `git pull --recurse-submodules`;
+
+Run git clone with the recursive flag to pull the entire thing:
+
+```
+git clone --recursive https://github.com/Librity/gympoint_full_stack
+```
+
 ### 🤖 Running the back-end
 
 To boot, we need to create three Docker containers to handle the applications
@@ -190,4 +205,4 @@ This software comes with the hyper-permissive [MIT LICENSE](LICENSE.md).
 
 ---
 
-Made with ♥ by [🕎 Luis Geniole](https://github.com/Librity) :wave:
+Made with ♥ by [Luisito](https://github.com/Librity)  :wave:
